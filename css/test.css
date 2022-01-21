@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body{
+font-family: 'Murecho', sans-serif;
+line-height:1.5;
+}
+
+_:-ms-lang(x)::-ms-backdrop, body{/*IE11用ハック*/
+    overflow-x: hidden;
+
+}
+
+.timeline-Widget {
+  padding: 20px;
+  background-size: auto auto;
+  background-color: #3c3c3c;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #323232 10px, #323232 20px)
+}
+.timeline-TweetList-tweet {
+  color: #fff
+}
+.SandboxRoot.env-bp-660 .timeline-Header-byline, .SandboxRoot.env-bp-660 .timeline-Header-subtitle, .SandboxRoot.env-bp-820 .timeline-Header-byline, .SandboxRoot.env-bp-820 .timeline-Header-subtitle, .SandboxRoot.env-bp-970 .timeline-Header-byline, .SandboxRoot.env-bp-970 .timeline-Header-subtitle {
+  color: #fff !important
+}
+.timeline-Header-title {
+  color: #fff !important;
+  font-size: 20px !important
+}
+.timeline-Header-title a {
+  color: #fff !important
+}
+.timeline-Tweet {
+  transition: background-color .3s
+}
+.timeline-Tweet:hover {
+  background-color: rgba(0, 0, 0, .2)
+}
+.TwitterCard-container--clickable:hover {
+  background-color: rgba(0, 0, 0, .2)
+}
+
+#wrapper{
+/*描画されるテキストを中央寄せにする*/
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#particle{
+    width:100%;
+	height: 100vh;
+	vertical-align: bottom;/*canvasタグ下に余白が生まれるのを防ぐ*/
+}
+
+
+body{
+	animation: bgchange 30s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+}
+
+@keyframes bgchange{
+        0%   {background:#daca0b;}/*変化させたい色*/
+       10%  {background:#8bda0b;}/*変化させたい色*/
+       20%  {background:#18da0b;}/*変化させたい色*/
+       30%  {background:#0bdaaa;}/*変化させたい色*/
+       40%  {background:#0ba1da;}/*変化させたい色*/
+       50% {background:#0b38da;}/*変化させたい色*/
+       60% {background:#810bda;}/*変化させたい色*/
+       70% {background:#da0b9a;}/*変化させたい色*/
+       80% {background:#da0b4e;}/*変化させたい色*/
+       90% {background:#da6a0b;}/*変化させたい色*/
+       100%{background:#daca0b;}
+ }
+
+ html { scroll-behavior: smooth;}
