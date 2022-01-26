@@ -195,6 +195,15 @@ small{
   padding:20px;
 }
 
+.about{
+  font-size: 0.5rem;
+  display: inline-block;
+  text-align:center;
+}
+
+video{
+  text-align: center;
+}
 
 section{
   padding:30px;
