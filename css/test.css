@@ -72,3 +72,28 @@ body{
  }
 
  html { scroll-behavior: smooth;}
+
+ .flex{
+   display: flex;
+   padding: 2.5% 0;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+  background:#333;
+   flex-wrap:wrap;
+ }
+
+.about{
+  vertical-align: middle;
+  text-align: center;
+  background-color: dodgerblue;
+  background:#333;
+  color:#fff;
+  padding: 2.5% ;
+
+}
+
+.twitter{
+  text-align: center;
+}
