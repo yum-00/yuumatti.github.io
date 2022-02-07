@@ -1,7 +1,15 @@
 @charset "utf-8";
 
+@font-face {
+  /*フォントの名前*/
+  font-family: "makinas";
+  /*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
+  src: url("assets/font/Makinas-4-Flat.woff2") format("woff2"),
+       url("assets/font/Makinas-4-Flat.woff") format("woff");
+}
+
 body{
-font-family: 'Murecho', sans-serif;
+font-family: 'makinas', sans-serif;
 line-height:1.5;
 }
 
@@ -80,8 +88,8 @@ body{
    justify-content: center;
    justify-content: space-around;
    align-items: center;
-  background:#333;
-   flex-wrap:wrap;
+   background:#333;
+   flex-wrap:nowrap;
  }
 
 .about{
@@ -91,10 +99,21 @@ body{
   background:#333;
   color:#fff;
   padding: 2.5% ;
-
 }
 
 table{
+  padding: 10px;
+  color: #fff;
+}
+
+table#about-table{
+  font-family: 'Murecho', sans-serif;
+  line-height:1.5;
+
+}
+
+.table{
   width: 90%;
   text-align: center;
+  color: #000;
   }
