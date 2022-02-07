@@ -102,16 +102,21 @@ body{
 }
 
 table{
-  padding: 10px;
+  padding: 50px;
   color: #fff;
+  border-collapse: collapse
 }
 
 table#about-table{
-  font-family: 'Murecho', sans-serif;
+  font-family: 'makinas', sans-serif;
   line-height:1.5;
-
+  font-weight: lighter;
+  border-collapse: collapse;
 }
 
+table tr#border , table th#boder {
+  border: solid 1px black;
+}
 .table{
   width: 90%;
   text-align: center;
