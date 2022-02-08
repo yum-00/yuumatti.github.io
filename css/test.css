@@ -112,10 +112,14 @@ table#about-table{
   line-height:1.5;
   font-weight: lighter;
   border-collapse: collapse;
+
 }
 
 table tr#border , table th#boder {
   border: solid 1px black;
+  padding: 20px;
+  font-weight: lighter;
+
 }
 .table{
   width: 90%;
