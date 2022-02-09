@@ -1,7 +1,15 @@
 @charset "utf-8";
 
+@font-face {
+  /*フォントの名前*/
+  font-family: "makinas";
+  /*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
+  src: url("../assets/font/makinas.woff2") format("woff2"),
+       url("../assets/font/makinas.woff") format("woff");
+}
+
 body{
-font-family: 'Murecho', sans-serif;
+font-family: 'makinas', sans-serif;
 line-height:1.5;
 }
 
@@ -80,8 +88,8 @@ body{
    justify-content: center;
    justify-content: space-around;
    align-items: center;
-  background:#333;
-   flex-wrap:wrap;
+   background:#333;
+   flex-wrap:nowrap;
  }
 
 .about{
@@ -91,5 +99,93 @@ body{
   background:#333;
   color:#fff;
   padding: 2.5% ;
+}
 
+table{
+  padding: 50px;
+  color: #fff;
+  border-collapse: collapse
+}
+
+table#about-table{
+  font-family: 'makinas', sans-serif;
+  line-height:1.5;
+  font-weight: lighter;
+  border-collapse: collapse;
+
+}
+
+table tr#border , table th#boder {
+  border: solid 1px black;
+  padding: 20px;
+  font-weight: lighter;
+
+}
+.table{
+  width: 90%;
+  text-align: center;
+  color: #000;
+  }
+
+.recipes{
+  vertical-align: middle;
+  text-align: center;
+  background-color: dodgerblue;
+  background:#333;
+  color:#fff;
+  padding: 2.5% ;
+}
+
+
+.btnlinestretches2{
+    /*線の基点とするためrelativeを指定*/
+	position:relative;
+    /*ボタンの形状*/
+	color:#333;
+    padding: 10px 30px;
+	display:inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+/*線の設定*/
+.btnlinestretches2::before,
+.btnlinestretches2::after {
+	content:'';
+    /*絶対配置で線の位置を決める*/
+	position:absolute;
+    /*事前に出現させる線の形状*/
+	border:solid #333;
+	width:10px;
+	height:10px;
+    /*アニメーションの指定*/
+	transition:all 0.3s ease-in-out;
+}
+
+.btnlinestretches2::before{
+    /*事前に出現させる線の位置*/
+	top:0;
+	left:0;
+    /*事前に出現させる線の形状*/
+	border-width:2px 0 0 2px;
+}
+
+.btnlinestretches2::after{
+    /*事前に出現させる線の位置*/
+	bottom:0;
+	right:0;
+    /*事前に出現させる線の形状*/
+	border-width:0 2px 2px 0;
+}
+
+/*hoverした際の線の形状*/
+.btnlinestretches2:hover::before,
+.btnlinestretches2:hover::after{
+	width:calc(100% - 2px);
+	height:calc(100% - 2px);
+	border-color:#ffffff
+}
+
+.shiro{
+  color: #FFF;
 }
