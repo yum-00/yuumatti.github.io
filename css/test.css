@@ -134,6 +134,8 @@ table tr#border , table th#boder {
   background:#333;
   color:#fff;
   padding: 2.5% ;
+  line-height: 30px;
+
 }
 
 .btn{

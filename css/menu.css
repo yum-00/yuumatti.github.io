@@ -174,11 +174,12 @@ h1{
   font-size:3rem;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px;
-  font-family: 'Teko', sans-serif;
+  padding:4px;
   letter-spacing: 0.075em;
+}
 
-
+.eng{
+  font-family: 'Teko', sans-serif;
 }
 
 h2{
