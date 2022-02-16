@@ -17,7 +17,7 @@ speed: "slow", // slow, middle, high の3つから粒子が集まる速さを選
 
 function PageTopAnime() {
 	var scroll = $(window).scrollTop();
-	if (scroll >= 1){//上から200pxスクロールしたら
+	if (scroll >= 20){//上から200pxスクロールしたら
 		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
 		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
 	}else{

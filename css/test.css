@@ -307,7 +307,7 @@ a#about{
 	z-index: 2;
     はじめは非表示
 	opacity: 0;
-	transform: translateY(20px);
+	transform: translateY(100px);
 }
 
 /*　上に上がる動き　*/
