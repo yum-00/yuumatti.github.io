@@ -283,7 +283,7 @@ a#about{
 	display: flex;
 	justify-content:center;
 	align-items:center;
-	background:#942D2F;
+	background:#38a5aa;
 	border-radius: 5px;
 	width: 60px;
 	height: 60px;
@@ -296,7 +296,7 @@ a#about{
 }
 
 #page-top a:hover{
-	background: #777;
+	background: #1e5a5d;
 }
 
 /*リンクを右下に固定*/
